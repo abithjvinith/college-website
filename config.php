@@ -2,18 +2,19 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "biodata";
+$dbname = "project";
+
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 function iud_data($query) {
-    $servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "biodata";
+$dbname = "home";
     $message="";
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
